@@ -1,80 +1,48 @@
-# Shoe Inventory
+# Alien Invasion Game
 
-This is a Python programme that helps manage the inventory of shoes in a shop. It will read from an inventory.txt file where the shoe data will be stored.
-It keps track of shoe data including country of origin, model name, code for re-ordering, and current stock count. It also has the ability to manually add
-new stock and update stock count when new stock comes in. 
+This is a clone of a popular arcade game, coded while learning Python and Pygame from the books "Python Crash Course" by Eric Matthes.
+
+![Screenshot image of the game running](https://user-images.githubusercontent.com/116950436/214559135-4aa0882c-ed86-4661-80a9-a6cf88a6ee0f.png)
 
 ## Table of Contents
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributions](#contributions)
-- [Credits](#credits)
-
-## Features
-
-- View all shoes in stock with all data
-- Add new shoes to the inventory
-- Update stock count
-- Search for shoe with highest stock and mark as on sale
-- Search for a specific shoe in the inventory and return its data
-- Calculate total value of all shoes in stock
+- Requirements
+- Installation
+- Pygame Install
+- Contributions
+- Credits
 
 ## Requirements
 
-- Python 3.6 or higher
+- Python 3.8 (note Pygame has not yet been updated for Python versions higher than this)
 - Suitable IDE (like PyCharm or VSC)
-- Creation ofa local txt file called "inventory.txt"
+- Pygame 2.1.2 or later
 
 ## Installation
 
-1. Download a copy of the file: "inventory.py"
-2. Install any of the above requirements lacking on local system
-3. Create the txt file mentioned above
+1. Download a copy of all files
+2. Place all files into the same root folder
+3. Install any of the above requirements lacking on local system
 4. Run the programme on chosen IDE
 
-## Usage
+## Pygame Install
+To install Pygame for the current user, enter the following command at a terminal prompt:
 
-```python
-# Function to give menu options to user to carry out all functions above
-def main():
-    # Create a menu
-    menu = ["", "1. View all shoes", "2. Re-stock shoes", "3. Search for a shoe",
-            "4. Calculate the total value for each shoe", "5. Find the shoe with the highest quantity",
-            "6. Enter new shoe into system", "7. Exit"]
- ```
-![menu](https://user-images.githubusercontent.com/116950436/206730308-b7ed276b-8fe0-4d6b-948b-8d0a4b3d9da1.png)
+    $ python3 -m pip install --user pygame
 
-To use any of the features in the programme simply enter a number from the menu above into the terminal.
-The file autmatically calls the `main()` function when the programme starts to show the menu.
+To install using PhCharm, you will see a red highlighted error on the import if Pygame is not installed:
 
-To view all shoes simply return `1` to the programme and a table of shoes with their relevant info will appear like this:
+![PyCharm error loading Pygame](https://user-images.githubusercontent.com/116950436/214559289-868c068a-e805-4266-8865-14d7c2096de4.png)
 
-![view_all](https://user-images.githubusercontent.com/116950436/206730706-a701d444-5fdc-402e-b80c-a7312008d1b0.png)
+To add the Pygame package for the Alien Invasion game, hover over import pygame and press and right click. The following popup menu should be shown:
 
-`2` will show you the show with the lowest stock and give you the option to update its stock.
+![PyCharm install Pygame](https://user-images.githubusercontent.com/116950436/214559304-517fa50f-0722-4d4c-a8ea-4bd05294e625.png)
 
-Searching for a shoe simply requires enter `3`and then the code for the shoe you are looking up. A table similar to the view all table will appear, 
-but this time only containing the info for the shoe code your entered.
+To install the Pygame package, select Install package pygame.
 
-If you would like to know how much each model of shoe is worth in total (total amount for all stock of that model) simply return `4` to the programme.
-The information will be printed as follows:
+## Quit the Game
 
-![view_total](https://user-images.githubusercontent.com/116950436/206730726-e7a9436d-b760-40b4-ba38-d0d011661c57.png)
-
-
-`5` will return the item to you that has the highest stock count and list it for sale:
-
-![highest_stock](https://user-images.githubusercontent.com/116950436/206732447-5b8298fb-3171-42e4-951a-7c7f96bdb6b7.png)
-
-To add a new shoe to the system return `6` and fill in the info when asked for it (see image below for example). This will append the new shoe to 
-the "inventory.txt" file and update the list.
-
-![input_new](https://user-images.githubusercontent.com/116950436/206730754-47629a25-78eb-4676-8799-bfe7cf8aa20d.png)
-
- Entering `7` will simply end the programme, allowing you to exit.
+Pressing "q" at any time will exit the game, which always starts in fullscreen mode.
 
 ## Contributions
 
@@ -89,4 +57,4 @@ We welcome contributions to this project. To contribute, please follow these ste
 ## Credits
 
 - [Darran Smith](https://github.com/DarranS360)
-- [HyperionDev](https://hyperiondev.com)
+- [Eric Matthes](https://github.com/topics/eric-matthes)
